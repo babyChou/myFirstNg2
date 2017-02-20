@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params, Router }   from '@angular/router';
-import { Location }                 from '@angular/common';
+import { Location } from '@angular/common';
 import 'rxjs/add/operator/switchMap';
 
 
@@ -19,8 +19,10 @@ export class LoginComponent implements OnInit {
 	  	// .subscribe(hero => this.hero = hero);
   }
 
-  gotoDetail(): void {
-  	this.router.navigate(['/detail', this.selectedHero.id]);
+  gotoAbout(): void {
+  	// this.router.navigate(['/about', this.selectedHero.id]);
   }
+
+
 
 }
