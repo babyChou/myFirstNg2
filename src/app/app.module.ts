@@ -8,6 +8,9 @@ import { HttpModule } from '@angular/http';
 // import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 // import { InMemoryDataService }  from './in-memory-data.service';
 
+import { AppConfigService } from './app-config.service';
+import { LoginService } from './login/login.service';
+
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { AboutComponent } from './about/about.component';
@@ -28,7 +31,10 @@ import { AppRoutingModule }     from './app-routing.module';
         // InMemoryWebApiModule.forRoot(InMemoryDataService),
         AppRoutingModule
     ],
-    providers: [],
+    providers: [
+        AppConfigService,
+        LoginService
+    ],
     bootstrap: [AppComponent]
 })
 

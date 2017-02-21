@@ -14,9 +14,9 @@ export class LoginComponent implements OnInit {
   constructor(private router: Router, private route: ActivatedRoute, private location: Location) { }
 
   ngOnInit(): void {
-	  	// this.route.params
-	  	// .switchMap((params: Params) => this.heroService.getHero(+params['id']))
-	  	// .subscribe(hero => this.hero = hero);
+    // this.route.params
+    // .switchMap((params: Params) => this.heroService.getHero(+params['id']))
+    // .subscribe(hero => this.hero = hero);
   }
 
   gotoAbout(): void {
