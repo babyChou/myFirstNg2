@@ -9,6 +9,7 @@ import { Observable } from 'rxjs/Rx';*/
 
 import 'rxjs/add/operator/toPromise';
 
+import { CommonResult } from '../shared/common-interface';
 import { LoginInterface, CheckSessionInterface } from './login-interface';
 import { AppConfigService } from '../app-config.service';
 import { HelpService } from '../shared/help.service';
@@ -41,7 +42,7 @@ export class LoginService {
 		}
 	}
 
-	login(loginObj: LoginInterface): Promise<Object>{
+	login(loginObj: LoginInterface): Promise<CommonResult>{
 
 		let postData = {
 			username : loginObj.username,
@@ -89,7 +90,6 @@ export class LoginService {
 		this.help.deleteCookie( this.keepLoginKey , '/');
 	}
 
-	// checkSession(): Promise<Object>{
 	checkSession(): Promise<CheckSessionInterface>{
 
 		let _session: string = this.help.getCookie( this.sessionKey );
@@ -116,12 +116,13 @@ export class LoginService {
 							};
 
 								
-						});
+						})
+						.catch(this.handleError);
 
 	}
 
 	private handleError(error: any): Promise<any> {
-		console.error('An error occurred', error);
+		// console.error('An error occurred', error);
 		return Promise.reject(error.message || error);
 	}
 

@@ -7,7 +7,7 @@ import { AboutComponent } from './about/about.component';
 const appRoutes: Routes = [
 	{
 		path: '',
-		redirectTo: '/about',
+		redirectTo: '/login',
 		pathMatch: 'full'
 	},
 	{

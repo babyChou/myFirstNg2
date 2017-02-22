@@ -4,11 +4,15 @@ import { RouterModule }   from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+import { MaterialModule } from '@angular/material';
+import 'hammerjs';
+
 // Imports for loading & configuring the in-memory web api
 // import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 // import { InMemoryDataService }  from './in-memory-data.service';
 
 import { AppConfigService } from './app-config.service';
+import { HelpService } from './shared/help.service';
 import { LoginService } from './login/login.service';
 
 import { AppComponent } from './app.component';
@@ -28,11 +32,13 @@ import { AppRoutingModule }     from './app-routing.module';
         BrowserModule,
         FormsModule,
         HttpModule,
-        // InMemoryWebApiModule.forRoot(InMemoryDataService),
-        AppRoutingModule
+
+        AppRoutingModule,
+        MaterialModule.forRoot()
     ],
     providers: [
         AppConfigService,
+        HelpService,
         LoginService
     ],
     bootstrap: [AppComponent]

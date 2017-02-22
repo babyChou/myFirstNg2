@@ -80,7 +80,7 @@ export class HelpService {
 
     checkRtmpUrl(value:string){
         var fmsUrlPattern = /^rtmp:\/\/([-a-zA-Z0-9.]+)(:(\d*))?(.*)$/;
-        var result = fmsUrlPattern.exec(value);
+        var result:any = fmsUrlPattern.exec(value);
 
         if( null !== result )
         {
