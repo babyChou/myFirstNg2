@@ -51,7 +51,7 @@
     }
   },
   "defaults": {
-    "styleExt": "less",
+    "styleExt": ["less","scss"],
     "component": {}
   }
 }

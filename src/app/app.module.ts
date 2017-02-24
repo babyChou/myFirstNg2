@@ -4,6 +4,7 @@ import { RouterModule }   from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { MaterialModule } from '@angular/material';
 import 'hammerjs';
 
@@ -34,6 +35,7 @@ import { AppRoutingModule }     from './app-routing.module';
         HttpModule,
 
         AppRoutingModule,
+        FlexLayoutModule.forRoot(),
         MaterialModule.forRoot()
     ],
     providers: [

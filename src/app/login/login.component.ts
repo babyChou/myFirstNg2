@@ -14,9 +14,16 @@ import { LoginService } from './login.service';
 @Component({
     selector: 'app-login',
     templateUrl: './login.component.html',
-    styleUrls: ['./login.component.less']
+    styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
+
+    tiles = [
+    {text: 'One', cols: 3, rows: 1, color: 'lightblue'},
+    {text: 'Two', cols: 1, rows: 2, color: 'lightgreen'},
+    {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
+    {text: 'Four', cols: 2, rows: 1, color: '#DDBDF1'},
+  ];
 
     constructor(private router: Router, private route: ActivatedRoute, private location: Location, private LoginService: LoginService) { }
 
