@@ -1,0 +1,4 @@
+ "./node_modules/.bin/ng-xi18n" -p src/tsconfig.json
+
+https://angular.io/docs/ts/latest/cookbook/i18n.html#!#angular-i18n
+https://angular.cn/docs/ts/latest/cookbook/i18n.html

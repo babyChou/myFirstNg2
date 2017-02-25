@@ -20,5 +20,10 @@
     "types": [
       "hammerjs"
     ]
-  }
+  },
+   "exclude": [
+    "test.ts",
+    "**/*.spec.ts"
+  ],
+"angularCompilerOptions": { "genDir": "i18n" }
 }
