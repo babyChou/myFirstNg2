@@ -2,3 +2,15 @@
 
 https://angular.io/docs/ts/latest/cookbook/i18n.html#!#angular-i18n
 https://angular.cn/docs/ts/latest/cookbook/i18n.html
+
+
+1.nodejs version control
+https://github.com/coreybutler/nvm-windows
+https://www.sitepoint.com/quick-tip-multiple-versions-node-nvm/
+
+2.angular2 i18n
+http://www.savethecode.com/angular2-i18n-native-support/
+
+3.angular2 translate
+https://scotch.io/tutorials/simple-language-translation-in-angular-2-part-1
+http://kyleap.blogspot.tw/2016/11/angular2.html
