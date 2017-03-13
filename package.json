@@ -4,7 +4,7 @@
   "license": "MIT",
   "angular-cli": {},
   "scripts": {
-    "extract-i18n": "cd src && ng-xi18n",
+    "i18n": "cd src && ng-xi18n",
     "ng": "ng",
     "start": "ng serve",
     "test": "ng test",
