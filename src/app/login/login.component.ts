@@ -17,6 +17,9 @@ import { LoginService } from './login.service';
     styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
+    username:string = 'sdfsdfdf';
+    password:string = '';
+    isLogin:boolean = false;
 
     tiles = [
     {text: 'One', cols: 3, rows: 1, color: 'lightblue'},
@@ -29,10 +32,20 @@ export class LoginComponent implements OnInit {
 
     ngOnInit(): void {
 
+      
+            // this.router.navigateByUrl('/about');
+
+        // this.route.params
+        // .switchMap((params: Params) => this.heroService.getHero(+params['id']))
+        // .subscribe(hero => this.hero = hero);
+    }
+
+    login(): void {
+        console.log(this.username,this.password);
         this.LoginService.login({
-            username : 'aaa',
-            password : 'dfsdfd',
-            autoLogin : false
+            username : this.username,
+            password : this.password,
+            autoLogin : this.isLogin
         }).then(
             (data) => {
                alert('msg');
@@ -42,11 +55,6 @@ export class LoginComponent implements OnInit {
             }
         );
         console.log(1313123);
-            // this.router.navigateByUrl('/about');
-
-        // this.route.params
-        // .switchMap((params: Params) => this.heroService.getHero(+params['id']))
-        // .subscribe(hero => this.hero = hero);
     }
 
     gotoAbout(): void {

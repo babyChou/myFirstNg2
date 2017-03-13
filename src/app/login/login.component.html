@@ -4,15 +4,20 @@
             <md-card-title >Please Login</md-card-title>
             <div>
                 <md-input-container>
-                    <input mdInput placeholder="Favorite food" value="">
+                    <input mdInput placeholder="Favorite food" [(ngModel)]="username">
                 </md-input-container>
             </div>
             <div>
                 <md-input-container>
-                    <input mdInput placeholder="Favorite food" value="">
+                    <input mdInput placeholder="Favorite food" [(ngModel)]="password">
                 </md-input-container>
             </div>
-
+            <div>
+                <md-checkbox [(ngModel)]="isLogin">Keep Login</md-checkbox>
+            </div>
+            <div>
+                <button md-raised-button color="$app-primary" (click)="login()">Login</button>
+            </div>
         </md-card>
 
 </div>
