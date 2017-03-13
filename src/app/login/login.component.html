@@ -1,24 +1,22 @@
 <div fxLayout="column" fxLayoutAlign="center center">
 
         <md-card class="login-block">
-            <md-card-title >Please Login</md-card-title>
+            <md-card-title i18n>Please Login</md-card-title>
             <div>
                 <md-input-container>
-                    <input mdInput placeholder="Favorite food" [(ngModel)]="username">
-                    <input type="text" mdInput i18n-placeholder placeholder="Account" value="">
+                    <input type="text" mdInput i18n-placeholder placeholder="Account" [(ngModel)]="username">
                 </md-input-container>
             </div>
             <div>
                 <md-input-container>
-                    <input mdInput placeholder="Favorite food" [(ngModel)]="password">
-                    <input type="password" mdInput i18n-placeholder placeholder="Password" value="">
+                    <input type="password" mdInput i18n-placeholder placeholder="Password" [(ngModel)]="password">
                 </md-input-container>
             </div>
             <div>
-                <md-checkbox [(ngModel)]="isLogin">Keep Login</md-checkbox>
+                <md-checkbox [(ngModel)]="isLogin" i18n>Keep Login</md-checkbox>
             </div>
             <div>
-                <button md-raised-button color="$app-primary" (click)="login()">Login</button>
+                <button md-raised-button color="$app-primary" (click)="login()" i18n>Login</button>
             </div>
         </md-card>
 

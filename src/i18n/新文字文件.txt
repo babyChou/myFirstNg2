@@ -8,6 +8,9 @@ https://angular.cn/docs/ts/latest/cookbook/i18n.html
 
 
 https://angular-2-training-book.rangle.io/handout/i18n/import-using-aot.html
+
+http://ithelp.ithome.com.tw/articles/10187551
+aot -------------ttt
 =======
 1.nodejs version control
 https://github.com/coreybutler/nvm-windows
@@ -20,4 +23,17 @@ https://angular-2-training-book.rangle.io/handout/i18n/import-using-aot.html
 3.angular2 translate
 https://scotch.io/tutorials/simple-language-translation-in-angular-2-part-1
 http://kyleap.blogspot.tw/2016/11/angular2.html
+
+
+
+===========
+
+"scripts": {
+    "i18n": "ng-xi18n -p src/tsconfig.json"
+  }
+
+"node_modules/.bin/ngc" -p tsconfig-aot.json
+
+
+
 
